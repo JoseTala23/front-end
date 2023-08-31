@@ -1,0 +1,38 @@
+<!-- <div *ngIf="peliculas?.length === 0">
+    <p>No hay peliculas que mostrar</p>
+</div>
+<ng-container *ngIf="peliculas && peliculas.length > 0">Los ng-container Se utilizan para limpiar un pcoo el DOM de la aplicacion -->
+<!-- <div
+    *ngFor="let pelicula of peliculas; let index = index"
+    class="pelicula-contenedor"
+    >
+    <div>Pelicula {{ index }}: {{ pelicula.titulo }}<button style="margin-left: 1rem;" (click)="remover(index)">Eliminar</button></div>
+        <div>
+            {{ pelicula.fechaLanzamiento | date: "dd-MM-yyyy" | uppercase}}
+        </div>    
+        <div>
+            {{ pelicula.precio | currency}}
+        </div>
+    </div>
+</ng-container> -->
+<app-listado-generico [listado]="peliculas">
+  <ng-container *ngIf="peliculas && peliculas.length > 0" contenido>
+    <div class="peliculas-contenedor">
+      <div
+        *ngFor="let pelicula of peliculas; let index = index"
+        class="pelicula-contenedor"
+      >
+        <a>
+          <img [src]="pelicula.poster" alt="Poster" />
+        </a>
+        <p>
+          <a>{{ pelicula.titulo }}</a>
+        </p>
+        <div>
+          <a mat-flat-button color="primary"> Editar </a>
+          <button mat-flat-button color="warn" type="button">Borrar</button>
+        </div>
+      </div>
+    </div>
+  </ng-container>
+</app-listado-generico>

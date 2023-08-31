@@ -25,7 +25,9 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.css"
+              "@angular/material/prebuilt-themes/indigo-pink.css",
+              "src/styles.css",
+              "C:/Users/jmtalaveron/Repositorios/Repositorio Front/front-end/node_modules/leaflet/dist/leaflet.css"
             ],
             "scripts": []
           },
@@ -87,6 +89,7 @@
               "src/assets"
             ],
             "styles": [
+              "@angular/material/prebuilt-themes/indigo-pink.css",
               "src/styles.css"
             ],
             "scripts": []
@@ -94,5 +97,8 @@
         }
       }
     }
+  },
+  "cli": {
+    "analytics": "e6e5a382-f527-4c40-9995-0d6faf6d0e04"
   }
 }

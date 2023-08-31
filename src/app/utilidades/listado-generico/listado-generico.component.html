@@ -1,0 +1,6 @@
+<div *ngIf="listado?.length === 0">
+    <p>No hay peliculas que mostrar</p>
+</div>
+<ng-container *ngIf="listado && listado.length > 0"><!-- Los ng-container Se utilizan para limpiar un pcoo el DOM de la aplicacion -->
+   <ng-content select="[contenido]"></ng-content>   
+</ng-container>
