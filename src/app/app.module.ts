@@ -38,7 +38,6 @@ import { InputMakdownComponent } from './utilidades/input-makdown/input-makdown.
 import { MarkdownModule } from 'ngx-markdown';
 import { FormularioCineComponent } from './cines/formulario-cine/formulario-cine.component'
 import { LeafletModule } from '@asymmetrik/ngx-leaflet';
-import { MapaComponent } from './utilidades/mapa/mapa.component';
 import { FormularioPeliculasComponent } from './peliculas/formulario-peliculas/formulario-peliculas.component';
 import { SelectorMultipleComponent } from './utilidades/selector-multiple/selector-multiple.component'
 
@@ -69,8 +68,7 @@ import { SelectorMultipleComponent } from './utilidades/selector-multiple/select
     FormularioActoresComponent,
     InputImgComponent,
     InputMakdownComponent,
-    FormularioCineComponent,
-    MapaComponent,
+    FormularioCineComponent,    
     FormularioPeliculasComponent,
     SelectorMultipleComponent,    
   ],
