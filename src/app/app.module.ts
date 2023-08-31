@@ -30,14 +30,11 @@ import { EditarCinesComponent } from './cines/editar-cines/editar-cines.componen
 import { EditarPeliculaComponent } from './peliculas/editar-pelicula/editar-pelicula.component';
 import { FormularioGeneroComponent } from './generos/formulario-genero/formulario-genero.component';
 import { FiltroPeliculasComponent } from './peliculas/filtro-peliculas/filtro-peliculas.component';
-
-import { MatSelectModule} from '@angular/material/select';
 import { FormularioActoresComponent } from './actores/formulario-actores/formulario-actores.component';
 import { InputImgComponent } from './utilidades/input-img-generico/input-img/input-img.component';
 import { InputMakdownComponent } from './utilidades/input-makdown/input-makdown.component';
 import { MarkdownModule } from 'ngx-markdown';
 import { FormularioCineComponent } from './cines/formulario-cine/formulario-cine.component'
-import { LeafletModule } from '@asymmetrik/ngx-leaflet';
 import { FormularioPeliculasComponent } from './peliculas/formulario-peliculas/formulario-peliculas.component';
 import { SelectorMultipleComponent } from './utilidades/selector-multiple/selector-multiple.component'
 
@@ -81,7 +78,6 @@ import { SelectorMultipleComponent } from './utilidades/selector-multiple/select
     ReactiveFormsModule,
     FormsModule,
     MarkdownModule.forRoot(),
-    LeafletModule
   ],
   providers: [],
   bootstrap: [AppComponent]
